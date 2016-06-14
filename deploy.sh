@@ -6,4 +6,6 @@ s3cmd modify --acl-public --guess-mime-type --add-header="Cache-Control: max-age
 
 s3cmd modify --acl-public --guess-mime-type --add-header="Cache-Control: max-age=86400" s3://rm-profile/*.jpg
 
+s3cmd modify --acl-public --mime-type='image/svg+xml' --add-header="Cache-Control: max-age=86400" s3://rm-profile/*.svg
+
 s3cmd modify --acl-public --guess-mime-type --add-header="Content-Type: utf-8" s3://rm-profile/index.html
